@@ -1,4 +1,3 @@
-HTML
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,56 +5,152 @@ HTML
 
   <style>
     body {
-      background-color: #fff0f5;
+      margin: 0;
       font-family: Arial;
+      background-color: #fff0f5;
       text-align: center;
-      padding: 50px;
     }
 
-    h1 {
+    header {
+      background: #ffe4ec;
+      padding: 15px;
+      font-size: 20px;
+      color: #ff69b4;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 40px;
+    }
+
+    .hero h1 {
+      font-size: 32px;
       color: #ff69b4;
     }
 
-    .box {
-      background: white;
-      padding: 20px;
-      border-radius: 20px;
-      margin: 20px auto;
-      width: 300px;
+    .hero p {
+      color: #777;
     }
 
-    button {
-      background: pink;
+    .btn {
+      background: #ff85a2;
       border: none;
       padding: 10px 20px;
       border-radius: 20px;
+      color: white;
       cursor: pointer;
-      margin: 5px;
+      margin-top: 10px;
+    }
+
+    .section {
+      padding: 30px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      width: 200px;
+      margin: 15px;
+      padding: 15px;
+      border-radius: 20px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    footer {
+      background: #ffe4ec;
+      padding: 20px;
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
 
 <body>
 
-  <h1>🎀 HoneyLuxeCloverCo</h1>
-  <p>Soft art & words for gentle souls</p>
+<header>
+🎀 HoneyLuxeCloverCo
+</header>
 
-  <!-- Image (you can change later) -->
-  <img src="https://i.imgur.com/yourbear.png" width="150">
+<div class="hero">
+  <h1>Soft art & words for gentle souls</h1>
+  <p>Digital poems, books & cute backgrounds 💗</p>
+  <button class="btn">Browse Shop</button>
+</div>
 
-  <div class="box">
-    <h2>💌 Poem #1</h2>
-    <p>"you felt like quiet..."</p>
+<div class="section">
+  <h2>💌 Poems</h2>
 
-    <!-- Cash App ONLY -->
-    <a href="https://cash.app/$Jaeleeyahcodie13" target="_blank">
-      <button>Pay with Cash App 💵</button>
-    </a>
+  <div class="products">
 
-    <p style="font-size:12px; color:gray;">
-      After payment, message proof to receive your download 💗
-    </p>
+    <div class="card">
+      <img src="https://i.imgur.com/yourbear.png">
+      <h3>Soft Sky Poem</h3>
+      <p>$3.00</p>
+      <a href="https://cash.app/$Jaeleeyahcodie13" target="_blank">
+        <button class="btn">Buy 💗</button>
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/yourbear.png">
+      <h3>Healing Words</h3>
+      <p>$4.00</p>
+      <a href="https://cash.app/$Jaeleeyahcodie13" target="_blank">
+        <button class="btn">Buy 💗</button>
+      </a>
+    </div>
+
   </div>
+</div>
+
+<div class="section">
+  <h2>📱 Backgrounds</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="https://i.imgur.com/yourbear.png">
+      <h3>Pink Bear Wallpaper</h3>
+      <p>$2.50</p>
+      <a href="https://cash.app/$Jaeleeyahcodie13" target="_blank">
+        <button class="btn">Buy 💗</button>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<div class="section">
+  <h2>📖 Mini Books</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="https://i.imgur.com/yourbear.png">
+      <h3>Soft Feelings Book</h3>
+      <p>$6.00</p>
+      <a href="https://cash.app/$Jaeleeyahcodie13" target="_blank">
+        <button class="btn">Buy 💗</button>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+Made with love 💗 | HoneyLuxeCloverCo  
+<br><br>
+After payment, message proof to receive your download
+</footer>
 
 </body>
 </html>
