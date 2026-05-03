@@ -8,28 +8,38 @@
       margin: 0;
       font-family: Arial;
       background-color: #fff0f5;
-      text-align: center;
     }
 
-    header {
-      background: #ffe4ec;
+    /* NAV */
+    nav {
+      background: #ffd6e7;
       padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      color: #ff4d88;
+      margin: 0;
       font-size: 20px;
-      color: #ff69b4;
+    }
+
+    nav a {
+      margin: 0 8px;
+      text-decoration: none;
+      color: #ff4d88;
       font-weight: bold;
     }
 
+    /* HERO */
     .hero {
+      text-align: center;
       padding: 40px;
     }
 
-    .hero h1 {
-      font-size: 32px;
+    .hero h2 {
       color: #ff69b4;
-    }
-
-    .hero p {
-      color: #777;
     }
 
     .btn {
@@ -39,14 +49,19 @@
       border-radius: 20px;
       color: white;
       cursor: pointer;
-      margin-top: 10px;
     }
 
+    /* SECTIONS */
     .section {
-      padding: 30px;
+      padding: 20px;
     }
 
-    .products {
+    h2 {
+      text-align: center;
+      color: #ff69b4;
+    }
+
+    .grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -54,57 +69,76 @@
 
     .card {
       background: white;
-      width: 200px;
-      margin: 15px;
-      padding: 15px;
-      border-radius: 20px;
+      width: 180px;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 15px;
+      text-align: center;
     }
 
     .card img {
       width: 100%;
-      border-radius: 15px;
+      border-radius: 10px;
+    }
+
+    /* FORM */
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 10px;
+      border: 1px solid #ccc;
     }
 
     footer {
-      background: #ffe4ec;
-      padding: 20px;
-      font-size: 14px;
-      color: #555;
+      background: #ffd6e7;
+      text-align: center;
+      padding: 15px;
+      font-size: 12px;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-🎀 HoneyLuxeCloverCo
-</header>
+<!-- NAV -->
+<nav>
+  <h1>🎀 HoneyLuxeCloverCo</h1>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#poems">Poems</a>
+    <a href="#books">Books</a>
+    <a href="#backgrounds">Backgrounds</a>
+    <a href="#submit">Submit</a>
+  </div>
+</nav>
 
-<div class="hero">
-  <h1>Soft art & words for gentle souls</h1>
+<!-- HOME -->
+<div id="home" class="hero">
+  <h2>Soft art & words for gentle souls</h2>
   <p>Digital poems, books & cute backgrounds 💗</p>
   <button class="btn">Browse Shop</button>
 </div>
 
-<div class="section">
+<!-- POEMS -->
+<div id="poems" class="section">
   <h2>💌 Poems</h2>
-
-  <div class="products">
+  <div class="grid">
 
     <div class="card">
       <img src="https://i.imgur.com/yourbear.png">
-      <h3>Soft Sky Poem</h3>
-      <p>$3.00</p>
-      <a href="https://cash.app/$Jaeleeyahcodie13" target="_blank">
+      <p>Soft Sky</p>
+      <p>$3</p>
+      <a href="https://cash.app/$Jaeleeyahcodie13">
         <button class="btn">Buy 💗</button>
       </a>
     </div>
 
     <div class="card">
       <img src="https://i.imgur.com/yourbear.png">
-      <h3>Healing Words</h3>
-      <p>$4.00</p>
-      <a href="https://cash.app/$Jaeleeyahcodie13" target="_blank">
+      <p>Lonely Heart</p>
+      <p>$3</p>
+      <a href="https://cash.app/$Jaeleeyahcodie13">
         <button class="btn">Buy 💗</button>
       </a>
     </div>
@@ -112,16 +146,33 @@
   </div>
 </div>
 
-<div class="section">
+<!-- BOOKS -->
+<div id="books" class="section">
+  <h2>📖 Books</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://i.imgur.com/yourbear.png">
+      <p>Love Poems Book</p>
+      <p>$6</p>
+      <a href="https://cash.app/$Jaeleeyahcodie13">
+        <button class="btn">Buy 💗</button>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- BACKGROUNDS -->
+<div id="backgrounds" class="section">
   <h2>📱 Backgrounds</h2>
-
-  <div class="products">
+  <div class="grid">
 
     <div class="card">
       <img src="https://i.imgur.com/yourbear.png">
-      <h3>Pink Bear Wallpaper</h3>
+      <p>Pink Bear Wallpaper</p>
       <p>$2.50</p>
-      <a href="https://cash.app/$Jaeleeyahcodie13" target="_blank">
+      <a href="https://cash.app/$Jaeleeyahcodie13">
         <button class="btn">Buy 💗</button>
       </a>
     </div>
@@ -129,26 +180,35 @@
   </div>
 </div>
 
-<div class="section">
-  <h2>📖 Mini Books</h2>
+<!-- SUBMIT FORM -->
+<div id="submit" class="section">
+  <h2>📝 Submit Your Poem</h2>
 
-  <div class="products">
+  <div style="max-width:400px; margin:auto; background:white; padding:20px; border-radius:15px;">
 
-    <div class="card">
-      <img src="https://i.imgur.com/yourbear.png">
-      <h3>Soft Feelings Book</h3>
-      <p>$6.00</p>
-      <a href="https://cash.app/$Jaeleeyahcodie13" target="_blank">
-        <button class="btn">Buy 💗</button>
-      </a>
-    </div>
+    <p style="font-size:14px; color:gray;">
+      Want to sell your poem here? Submit it 💗
+    </p>
+
+    <!-- ⚠️ TEMP FORM (doesn't send yet) -->
+    <form>
+
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Poem Title" required>
+      <textarea placeholder="Paste your poem here..." required></textarea>
+      <input type="number" placeholder="Price ($)" required>
+
+      <button class="btn">Submit 💗</button>
+
+    </form>
 
   </div>
 </div>
 
 <footer>
-Made with love 💗 | HoneyLuxeCloverCo  
-<br><br>
+Made with love 💗  
+<br>
 After payment, message proof to receive your download
 </footer>
 
